@@ -37,5 +37,8 @@ public class Main {
         secondGradeTeacher.teachFavSub();
         secondGraderPaul.yawn();
 
+        Custodian custodian = new Custodian("Mike");
+        custodian.cleanVomit();
+
     }
 }

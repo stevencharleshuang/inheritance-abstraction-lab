@@ -11,6 +11,6 @@ public class Student extends Person implements StudentActions {
 
     @Override
     public void yawn() {
-        System.out.printf("Yaaaaaaawwwwwnnn...");
+        System.out.println("Yaaaaaaawwwwwnnn...");
     }
 }
