@@ -1,6 +1,6 @@
 package com.company;
 
-public class Teacher extends Person {
+public class Teacher extends Person implements TeacherActions {
     private String favSubToTeach;
 
     public Teacher(String schoolName, int roomNum, String name, int age, int grade, String favSubToTeach) {
@@ -9,4 +9,13 @@ public class Teacher extends Person {
         this.favSubToTeach = favSubToTeach;
     }
 
+    @Override
+    public void takeAttendance() {
+        System.out.println("Role Call!");
+    }
+
+    @Override
+    public void teachFavSub() {
+        System.out.println("Today's lesson will be on " + favSubToTeach + "!!!");
+    }
 }

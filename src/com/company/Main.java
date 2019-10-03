@@ -33,7 +33,8 @@ public class Main {
         Student secondGraderPaul = new Student("P.S. 36", 2, "Paul", 6, 2, "Art");
         Student secondGraderPolo = new Student("P.S. 36", 2, "Polo", 5, 2, "Music");
 
-
+        firstGradeTeacher.takeAttendance();
+        secondGradeTeacher.teachFavSub();
 
     }
 }
