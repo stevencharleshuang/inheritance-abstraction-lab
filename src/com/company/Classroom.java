@@ -8,4 +8,12 @@ public class Classroom extends School {
 
         this.roomNum = roomNum;
     }
+
+    public int getRoomNum() {
+        return roomNum;
+    }
+
+    public void setRoomNum(int roomNum) {
+        this.roomNum = roomNum;
+    }
 }

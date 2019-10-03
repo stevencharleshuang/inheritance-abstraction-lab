@@ -9,6 +9,14 @@ public class Teacher extends Person implements TeacherActions {
         this.favSubToTeach = favSubToTeach;
     }
 
+    public String getFavSubToTeach() {
+        return favSubToTeach;
+    }
+
+    public void setFavSubToTeach(String favSubToTeach) {
+        this.favSubToTeach = favSubToTeach;
+    }
+
     @Override
     public void takeAttendance() {
         System.out.println("Role Call!");

@@ -9,6 +9,14 @@ public class Student extends Person implements StudentActions {
         this.favSubToLearn = favSubToLearn;
     }
 
+    public String getFavSubToLearn() {
+        return favSubToLearn;
+    }
+
+    public void setFavSubToLearn(String favSubToLearn) {
+        this.favSubToLearn = favSubToLearn;
+    }
+
     @Override
     public void yawn() {
         System.out.println("Yaaaaaaawwwwwnnn...");
