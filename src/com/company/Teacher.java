@@ -19,11 +19,11 @@ public class Teacher extends Person implements TeacherActions {
 
     @Override
     public void takeAttendance() {
-        System.out.println("Role Call!");
+        System.out.println(super.getName() + ": Role Call!");
     }
 
     @Override
     public void teachFavSub() {
-        System.out.println("Today's lesson will be on " + favSubToTeach + "!!!");
+        System.out.println(super.getName() + ": Today's lesson will be on " + favSubToTeach + "!!!");
     }
 }

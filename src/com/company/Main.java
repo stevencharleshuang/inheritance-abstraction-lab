@@ -28,17 +28,27 @@ public class Main {
         Student firstGraderKat = new Student("P.S. 36", 1, "Kat", 6, 1, "English");
         Student firstGraderMarco = new Student("P.S. 36", 1, "Marco", 5, 1, "Math");
 
-        Teacher secondGradeTeacher = new Teacher("P.S. 36", 2, "Mrs. Caputo", 45, 2, "Math");
-        Student secondGraderStacey = new Student("P.S. 36", 2, "Stacey", 6, 2, "Science");
-        Student secondGraderPaul = new Student("P.S. 36", 2, "Paul", 6, 2, "Art");
-        Student secondGraderPolo = new Student("P.S. 36", 2, "Polo", 5, 2, "Music");
+        Teacher secondGradeTeacher = new Teacher("P.S. 36", 2, "Mrs. Patrone", 35, 2, "Math");
+        Student secondGraderStacey = new Student("P.S. 36", 2, "Stacey", 7, 2, "Science");
+        Student secondGraderPaul = new Student("P.S. 36", 2, "Paul", 7, 2, "Art");
+        Student secondGraderPolo = new Student("P.S. 36", 2, "Polo", 8, 2, "Music");
+
+        Teacher thirdGradeTeacher = new Teacher("P.S. 36", 3, "Mrs. Kenney", 49, 3, "Art");
+        Student thirdGraderDan = new Student("P.S. 36", 3, "Dan", 8, 3, "Art");
+        Student thirdGraderRose = new Student("P.S. 36", 3, "Rose", 9, 3, "Social Studies");
+        Student thirdGraderVlad = new Student("P.S. 36", 3, "Vlad", 7, 3, "Computer Class");
+
+        Custodian custodian = new Custodian("Big Mike");
 
         firstGradeTeacher.takeAttendance();
+
         secondGradeTeacher.teachFavSub();
-        secondGraderPaul.yawn();
+        secondGraderPaul.react(secondGradeTeacher.getFavSubToTeach());
 
-        Custodian custodian = new Custodian("Mike");
+        thirdGradeTeacher.teachFavSub();
+        thirdGraderDan.react(thirdGradeTeacher.getFavSubToTeach());
+
+        thirdGraderVlad.getSick();
         custodian.cleanVomit();
-
     }
 }

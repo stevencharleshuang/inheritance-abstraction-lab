@@ -19,6 +19,24 @@ public class Student extends Person implements StudentActions {
 
     @Override
     public void yawn() {
-        System.out.println("Yaaaaaaawwwwwnnn...");
+        System.out.println(super.getName() + ": Yaaaaaaawwwwwnnn...");
+    }
+
+    @Override
+    public void excitement() {
+        System.out.printf(super.getName() +  ": Yea!!!\n");
+    }
+
+    @Override
+    public void getSick() {
+        System.out.println(super.getName() + ": I don't feel so good... Breghaawhgwhawwww... ");
+    }
+
+    public void react(String teachersFavSub) {
+        if (teachersFavSub.equals(favSubToLearn)) {
+            excitement();
+        } else {
+            yawn();
+        }
     }
 }

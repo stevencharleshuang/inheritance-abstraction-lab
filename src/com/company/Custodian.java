@@ -17,11 +17,11 @@ public class Custodian extends CustodianActions {
 
     @Override
     public void cleanMess() {
-        System.out.println("Time to get out the mop...");
+        System.out.println(name + ": Time to get out the mop...");
     }
 
     @Override
     public void cleanVomit() {
-        System.out.println("Ugh...time to get out the sawdust...");
+        System.out.println("Custodian " + name + ": Ugh...time to get out the sawdust...");
     }
 }
