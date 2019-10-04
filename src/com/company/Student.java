@@ -19,17 +19,17 @@ public class Student extends Person implements StudentActions {
 
     @Override
     public void yawn() {
-        System.out.println(super.getName() + ": Yaaaaaaawwwwwnnn...");
+        System.out.println("(Grade " + super.getGrade() + " Student) " + super.getName() + ": Yaaaaaaawwwwwnnn...");
     }
 
     @Override
     public void excitement() {
-        System.out.printf(super.getName() +  ": Yea!!!\n");
+        System.out.printf("(Grade " + super.getGrade() + " Student) " + super.getName() +  ": Yea!!!\n");
     }
 
     @Override
     public void getSick() {
-        System.out.println(super.getName() + ": I don't feel so good... Breghaawhgwhawwww... ");
+        System.out.println("(Grade " + super.getGrade() + " Student) " + super.getName() + ": I don't feel so good... Breghaawhgwhawwww... ");
     }
 
     public void react(String teachersFavSub) {
